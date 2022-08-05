@@ -15,8 +15,8 @@ li {
   padding: 0;
   font-size: 16px;
   line-height: 16px;
-
   padding-top: 6px;
+  text-transform: capitalize;
 }
 ul {
   margin: 0;
