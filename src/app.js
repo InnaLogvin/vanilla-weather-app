@@ -40,6 +40,7 @@ function displayTemperature(response) {
 
 let apiKey = "415b778c777202b3c441f0a528a39576";
 let units = "metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Oslo&appid=${apiKey}&units=${units}`;
+let city = "Dnipro";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
 axios.get(apiUrl).then(displayTemperature);
