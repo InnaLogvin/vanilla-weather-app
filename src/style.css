@@ -24,6 +24,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .weather-app {
   padding: 20px;
   border: 2px solid #a9a9a9;
@@ -52,4 +55,13 @@ ul {
   position: relative;
   font-size: 15px;
   top: -35px;
+}
+
+.weather-temperature .active {
+  color: #d664b8;
+  cursor: default;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: underline;
 }
