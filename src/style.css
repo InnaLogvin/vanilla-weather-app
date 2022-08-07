@@ -1,27 +1,11 @@
 body {
   font-family: Google Sans, arial, sans-serif;
 }
-
-@media all and (max-width: 1200px) {
-  body {
-    width: 960;
-    margin: 10px auto;
-  }
-}
-@media all and (max-width: 480px) {
-  body {
-    width: 400px;
-    margin: 0px auto;
-  }
-}
 h1 {
   color: #d664b8;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 26px;
-  margin-top: 15px;
-  position: relative;
-  left: -13px;
 }
 
 li {
@@ -44,7 +28,7 @@ a {
   text-decoration: none;
 }
 .weather-app {
-  padding: 20px 20px 0px 20px;
+  padding: 20px;
   border: 2px solid #a9a9a9;
   border-radius: 10px;
 }
@@ -54,10 +38,6 @@ a {
 }
 .overview {
   margin-bottom: 20px;
-}
-.middle-part {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
 }
 .weather-temperature img {
   margin-right: 10px;
@@ -84,10 +64,4 @@ a {
 }
 .weather-temperature .active:hover {
   text-decoration: underline;
-}
-.picture {
-  margin-top: 0px;
-  margin-right: 0px;
-  position: relative;
-  top: -15px;
 }
