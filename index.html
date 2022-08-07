@@ -19,6 +19,22 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control"
+                  id="city-enter"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-secondary" />
+              </div>
+            </div>
+          </form>
+
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
@@ -33,6 +49,7 @@
                   src="https://cdn-icons-png.flaticon.com/512/1163/1163685.png"
                   alt="sunny"
                   width="100"
+                  id="icon"
                   class="float-left"
                 />
                 <span class="temp">
