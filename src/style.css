@@ -3,9 +3,12 @@ body {
 }
 h1 {
   color: #d664b8;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 15px;
+  position: relative;
+  left: -13px;
 }
 
 li {
@@ -64,4 +67,10 @@ a {
 }
 .weather-temperature .active:hover {
   text-decoration: underline;
+}
+.picture {
+  margin-top: 0px;
+  margin-right: 0px;
+  position: relative;
+  top: -15px;
 }
