@@ -73,3 +73,17 @@ a {
   max-width: 100px;
   margin-top: 0px;
 }
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #70757a;
+}
+.forecast-date {
+  font-size: 15px;
+}
+.forecast-temperature {
+  font-size: 14px;
+}
+.forecast-min {
+  opacity: 0.6;
+}

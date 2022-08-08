@@ -21,6 +21,33 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let day = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri"];
+  day.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="forecast-date">
+        ${day}</div>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1163/1163685.png"
+          alt=""
+          width="30"
+        />
+        <div class="forecast-temperature">
+          <span class="forecast-max">30°</span>
+          <span class="forecast-min">25°</span>
+        </div>
+    </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   console.log(response.data.main);
@@ -89,3 +116,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Dnipro");
+displayForecast();
